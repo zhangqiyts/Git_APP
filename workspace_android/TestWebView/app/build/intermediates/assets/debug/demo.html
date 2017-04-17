@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+		<title>Android/Javascript互调Demo</title>
+		<canvas id="canvas" width="800" height="1000" style="background-color: AliceBlue;align-content: center">
+			你的浏览器暂不支持Canvas,请更换浏览器后再试
+		</canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("canvas");
+			var context=canvas.getContext("2d");
+			function pageLoad()
+			{
+				var x0=0.1*canvas.width;
+				var y0=0.9*canvas.height;
+				//the begin of the axias
+				var widthAx=0.8*canvas.width;
+				var heightAx=0.8*canvas.height;
+				//the width and height of the axais system
+
+				context.moveTo(0.1*canvas.width,0.1*canvas.height);
+				context.lineTo(0.1*canvas.width,0.9*canvas.height);
+				context.lineTo(0.9*canvas.width,0.9*canvas.height);
+				context.moveTo(0.09*canvas.width,0.115*canvas.height);
+				context.lineTo(0.1*canvas.width,0.1*canvas.height);
+				context.lineTo(0.11*canvas.width,0.115*canvas.height);
+				context.moveTo(0.885*canvas.width,0.89*canvas.height);
+				context.lineTo(0.9*canvas.width,0.9*canvas.height);
+				context.lineTo(0.885*canvas.width,0.91*canvas.height);
+				context.strokeStyle='black';
+				context.lineWidth=2;
+				context.stroke();
+				context.beginPath();
+				var textX=[0,1,2];
+				for(var i=0;i<1;i=i+1){
+					context.font="20pt Calibri";
+					context.fillText(0.25,x0+5,y0+30);
+					context.fillText(0.66,x0+600,y0+30);
+				}//X轴的数字
+				for(var i=0;i<1;i++)
+				{
+					context.font="20pt Calibri";
+					context.fillText("500hz",x0-70,y0-800);
+					context.fillText("0hz",x0-70,y0);
+				}
+				// drawData();
+				var tempData=[32,22,30];
+				y0=0.9*canvas.height;
+				var nowX0=x0+0.2*canvas.width;
+				context.arc(nowX0,y0-canvas.height*0.8*tempData[0]/40,6,0,2*Math.PI);
+				context.fillStyle="red";
+				context.fill();
+				context.beginPath();
+				context.moveTo(nowX0,y0-canvas.height*0.8*tempData[0]/40);
+				for(var i=1;i<3;i++)
+				{
+					nowX0+=0.2*canvas.width;
+					context.lineTo(nowX0,y0-tempData[i]/40*canvas.height*0.8);
+					context.strokeStyle='red';
+					context.stroke();
+					context.beginPath();
+					context.fillStyle="red";
+					context.arc(nowX0,y0-tempData[i]/40*canvas.height*0.8,6,0,2*Math.PI);
+					//context.stroke();
+					context.fill();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div ><a onClick="window.demo.pageLoad()" href="">点击-->JS调用Android代码</a></div>
+		<div style="margin:50px 50px 50px 50px;" id="content"></div>
+	</body>
+</html> 
