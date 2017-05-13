@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\AndroidStudioProjects\TestWebView\app\src\main\assets"><file name="demo.html" path="D:\AndroidStudioProjects\TestWebView\app\src\main\assets\demo.html"/></source><source path="D:\AndroidStudioProjects\TestWebView\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\AndroidStudioProjects\TestWebView\app\src\debug\assets"/></dataSet></merger>
