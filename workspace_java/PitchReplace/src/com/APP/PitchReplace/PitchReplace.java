@@ -32,7 +32,7 @@ public class PitchReplace {
 			cmd[1] = "--run" ; 
 			cmd[2] = "D:\\home\\APP\\workspace_praat\\GetPitchTierF0.scp" ; 
 			cmd[3] = dirPath; 
-			System.out.println(cmd);
+//			System.out.println(cmd);
 			Process pr = Runtime.getRuntime().exec(cmd);
 			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 	    	String line;
@@ -41,72 +41,37 @@ public class PitchReplace {
 	    	}
 	    	in.close();			
 			pr.waitFor();
-			System.out.println("end");
+//			System.out.println("end");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}	
 	}
-	public void Extract10F0() throws IOException{
+	public void ExtractTimeF0(String uploadPath_root, String L2_ID) throws IOException{
 		try {
-			String[] cmd = { "perl", "D:/home/APP/workspace_perl/PitchReplace/Get10F0.pl", PitchReplacePath};
-			Process pr = Runtime.getRuntime().exec(cmd);
-			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
+			String[] cmd = new String[4];
+			cmd[0] = "perl" ; 
+			cmd[1] = "D:/home/APP/workspace_perl/PitchReplace/GetTimeF0.pl" ; 
+			cmd[2] = uploadPath_root; 
+			cmd[3] = L2_ID;
+			Process pr = Runtime.getRuntime().exec(cmd);	
 			pr.waitFor();
-			System.out.println("end");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
-	public void ExtractTime() throws IOException{
+	public void PitchReplace_final(String uploadPath_root, double mean, double dev, String Chinese_ID, String L2_ID) throws IOException{
 		try {
-			String[] cmd = { "perl", "D:/home/APP/workspace_perl/PitchReplace/GetTime.pl", PitchReplacePath};
-			Process pr = Runtime.getRuntime().exec(cmd);
-			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
+			String[] cmd = new String[7];
+			cmd[0] = "perl" ; 
+			cmd[1] = "D:/home/APP/workspace_perl/PitchReplace/PitchReplace.pl" ; 
+			cmd[2] = uploadPath_root; 
+			/**均值和方差需查数据库获得**/
+			cmd[3] = String.format("%.2f", mean).toString(); //mean
+			cmd[4] = String.format("%.2f", dev).toString(); //dev 查询数据库获得
+			cmd[5] = Chinese_ID;
+			cmd[6] = L2_ID;
+			Process pr = Runtime.getRuntime().exec(cmd);		
 			pr.waitFor();
-			System.out.println("end");
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-	public void PitchReplace_final() throws IOException{
-		try {
-			String[] cmd = { "perl", "D:/home/APP/workspace_perl/PitchReplace/PitchReplace.pl", PitchReplacePath};
-			Process pr = Runtime.getRuntime().exec(cmd);
-			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
-			pr.waitFor();
-			System.out.println("end");
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void GetReturnData() throws IOException{
-		try {
-			String[] cmd = { "perl", "D:/home/APP/workspace_perl/PitchReplace/GetTimeF0.pl", PitchReplacePath};
-			Process pr = Runtime.getRuntime().exec(cmd);
-			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
-			pr.waitFor();
-			System.out.println("end");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

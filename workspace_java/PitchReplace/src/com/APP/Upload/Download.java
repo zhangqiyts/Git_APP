@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Download extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String UPLOAD_DIR = "D:/home/APP/PitchReplace/";
+	private static final String return_file = "D:/workspace_java/PitchReplace/WebContent/upload.jsp";
     public Download() {
         super();
     }
@@ -29,7 +29,7 @@ public class Download extends HttpServlet {
 		if(fileName == null || fileName.equals("")){
 			throw new ServletException("File Name can't be null or empty");
 		}
-		File file = new File(UPLOAD_DIR + File.separator + fileName);
+		File file = new File(return_file);
 		if(!file.exists()){
 			throw new ServletException("File doesn't exists on server.");
 		}

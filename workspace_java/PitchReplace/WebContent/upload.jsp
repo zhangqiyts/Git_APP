@@ -9,9 +9,10 @@
 <body>
 	<form action="Upload" method = "post" enctype = "multipart/form-data">
 	<input type = "file" name = "file1"/><br>
-	<input type = "file" name = "file2"/><br>
-	<input type = "file" name = "file3"/><br>
 	<input type = "submit" value = "submit"><br>
 	</form>
+	<table><tr>      
+    	<td><img src="data/L2F_qi_bao1_001/F2_bao1.png" width="350" height="250" /><br/></td>
+    </tr></table>
 </body>
 </html>

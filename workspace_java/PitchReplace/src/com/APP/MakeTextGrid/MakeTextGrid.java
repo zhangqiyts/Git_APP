@@ -42,6 +42,7 @@ public class MakeTextGrid {
 	}
 	
 	public void MakeMlf() throws IOException {
+		String syllable = null;
 		String mlf_dirname = PitchReplacePath + "/mlf/"; //路径
 	    File mlf_dir = new File(mlf_dirname);
 	    // 现在创建目录
@@ -49,45 +50,55 @@ public class MakeTextGrid {
 		String scp_dirname = PitchReplacePath + "/scp/"; //路径
 		File scp_dir = new File(scp_dirname);
 		String scp[] = scp_dir.list();
-		for (int i=0; i < scp.length; i++) { 	
-            if(scp[i].endsWith(".scp")){
-            	String pattern = "(.+)\\_(.+)\\_(.+)(\\d)\\.scp$";
-            	Pattern p = Pattern.compile(pattern);
-            	// 现在创建 matcher 对象
-                Matcher m = p.matcher(scp[i]);
-                if (m.find()) {
-                	String name_mlf = m.group(1) +"_"+ m.group(2) + "_" + m.group(3) + m.group(4);
-            		File file_mlf = new File(mlf_dirname + name_mlf + ".mlf");
-            	    FileOutputStream fos_mlf = new FileOutputStream(file_mlf);
-					OutputStreamWriter writer = new OutputStreamWriter(fos_mlf, "UTF-8");
-					writer.append("#!MLF!#");
-					writer.append("\r\n");
-					writer.append("\"*/" + name_mlf + ".lab\"");
-					writer.append("\r\n");
-					writer.append(m.group(3));
-					writer.append("\r\n");
-					writer.append(".");
-					writer.append("\r\n");
-					writer.close();
-					fos_mlf.close();
-                }
-            }
+		for (int i=0; i < scp.length; i++) { 
+			String name_mlf = scp[i].substring(0, scp[i].lastIndexOf(".scp"));
+			File file_mlf = new File(mlf_dirname + name_mlf + ".mlf");
+    	    FileOutputStream fos_mlf = new FileOutputStream(file_mlf);
+			OutputStreamWriter writer = new OutputStreamWriter(fos_mlf, "UTF-8");
+			writer.append("#!MLF!#");
+			writer.append("\r\n");
+			writer.append("\"*/" + name_mlf + ".lab\"");
+			writer.append("\r\n");
+			
+        	String[] stringArray_scp = scp[i].toString().trim().split("\\_");
+//        	System.out.println(stringArray_scp[2]);
+        	if(stringArray_scp[2].indexOf("X")!=-1){
+    			String[] stringArray_syllable = stringArray_scp[2].toString().trim().split("X");
+    			for(int j = 0; j < stringArray_syllable.length; j++){
+    				syllable = MathString(stringArray_syllable[j]);
+    				writer.append(syllable);
+    				writer.append("\r\n");
+    			}
+    		}else{
+    			syllable = MathString(stringArray_scp[2]);
+//    			System.out.println("****"+syllable);
+				writer.append(syllable);
+				writer.append("\r\n");
+    		}
+			writer.append(".");
+			writer.append("\r\n");
+			writer.close();
+			fos_mlf.close();
 		}	
 	}
 	
-	public void MakeAlignMlf() throws IOException {
+	private String MathString(String toMathString) {
+		// TODO Auto-generated method stub
+    	String pattern = "(.+)(\\d)";
+    	Pattern p = Pattern.compile(pattern);
+    	// 现在创建 matcher 对象
+        Matcher m = p.matcher(toMathString);
+        if (m.find()) {
+        	return m.group(1);
+        }else{
+        	return null;
+        }
+	}
+	public void MakeAlignTextGrid() throws IOException {
 		try {	
-			String[] cmd = { "perl", "D:/home/APP/workspace_perl/MakeTextGrid/mkAlignMlf.pl", PitchReplacePath};
+			String[] cmd = { "perl", "D:/home/APP/workspace_perl/MakeTextGrid/mkAlignTextGrid.pl", PitchReplacePath};
 			Process pr = Runtime.getRuntime().exec(cmd);
-//			Process pr = Runtime.getRuntime().exec("perl D:/home/APP/workspace_perl/MakeTextGrid/mkAlignMlf.pl"); //注意路径
-	    	BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
 			pr.waitFor();
-			System.out.println("end");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}	
@@ -96,15 +107,8 @@ public class MakeTextGrid {
 	public void MakeOutTextGrid() throws IOException{
 		try {
 			String[] cmd = { "perl", "D:/home/APP/workspace_perl/MakeTextGrid/multiCreateTextGrid.pl", PitchReplacePath};
-			Process pr = Runtime.getRuntime().exec(cmd);
-			BufferedReader in = new BufferedReader(new InputStreamReader(pr.getInputStream()));
-	    	String line;
-	    	while ((line = in.readLine()) != null) {
-	    		System.out.println(line);
-	    	}
-	    	in.close();			
+			Process pr = Runtime.getRuntime().exec(cmd);	
 			pr.waitFor();
-			System.out.println("end");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}	
