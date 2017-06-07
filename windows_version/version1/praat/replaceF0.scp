@@ -1,0 +1,96 @@
+form info
+	sentence reference_data
+	sentence modify_filename
+	sentence save_filename
+	sentence reference_time
+endform
+
+Text reading preferences: "UTF-8"
+Text writing preferences: "UTF-8"
+
+
+modify_filename$=left$(modify_filename$,rindex(modify_filename$,".")-1)
+modify_sfilename$=modify_filename$+".wav"
+modify_pfilename$=modify_filename$+".PitchTier"
+
+#print 'modify_filename$'
+reference_data$=reference_data$+","
+a=0
+while reference_data$!=""
+	cpos=index(reference_data$,",")
+	ltxt$=left$(reference_data$,cpos-1)
+	reference_data$=right$(reference_data$,length(reference_data$)-cpos)
+	if ltxt$!=""
+		a=a+1
+		v=extractNumber(ltxt$,"")
+		data'a'=v	
+	endif
+endwhile
+
+reference_time$=reference_time$+","
+a=0
+while reference_time$!=""
+	cpos=index(reference_time$,",")
+	ltxt$=left$(reference_time$,cpos-1)
+	reference_time$=right$(reference_time$,length(reference_time$)-cpos)
+	if ltxt$!=""
+		a=a+1
+		v=extractNumber(ltxt$,"")
+		time'a'=v
+	endif
+endwhile
+
+
+Read from file: "'modify_sfilename$'"
+Rename: "modify"
+if fileReadable(modify_pfilename$)
+	Read from file: "'modify_pfilename$'"
+	Rename: "modify"
+else
+	To Pitch: 0, 75, 600
+	Down to PitchTier
+endif
+
+#print 'time1'
+
+Create PitchTier: "new", time1, time2
+selectObject: "PitchTier new"
+time_start = time1
+time_2=(time2-time1)/9+time1
+time_3=(time2-time1)/9*2+time1
+time_4=(time2-time1)/9*3+time1
+time_5=(time2-time1)/9*4+time1
+time_6=(time2-time1)/9*5+time1
+time_7=(time2-time1)/9*6+time1
+time_8=(time2-time1)/9*7+time1
+time_9=(time2-time1)/9*8+time1
+time_end = time2
+
+
+Add point: time_start, data2
+Add point: time_2, data3
+Add point: time_3, data4
+Add point: time_4, data5
+Add point: time_5, data6
+Add point: time_6, data7
+Add point: time_7, data8
+Add point: time_8, data9
+Add point: time_9, data10
+Add point: time_end, data11
+
+
+selectObject: "Sound modify"
+To Manipulation: 0.01, 75, 600
+selectObject: "PitchTier new"
+plusObject: "Manipulation modify"
+Replace pitch tier
+selectObject: "Manipulation modify"
+
+Get resynthesis (overlap-add)
+Save as WAV file: "'save_filename$'"
+select all
+Remove
+
+
+
+

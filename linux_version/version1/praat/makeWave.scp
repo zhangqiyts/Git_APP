@@ -1,0 +1,57 @@
+form makeGraphic
+	sentence Sound_file_name_(声音文件名) /home/APP/workspace_praat/F2_ai1.wav
+	real Start_Time 0.0
+	real End_Time 0.0(=all)
+	positive pitch_Max 600
+	positive pitch_Min 75
+	positive maximum_Frequency_for_Formant 5500
+	positive picture_Width 3.3
+	real the_Index_of_referenced_Tier_in_TextGrid 1(=no referenced TextGrid)
+endform
+
+sT=0.0
+eT=0.0
+
+f0Max=600
+f0Min=75
+freBMax=5500
+freNMax=5000
+rTn=1
+picWidth=picture_Width
+
+efname$=""
+sfname$="/home/APP/workspace_praat/F2_ai1.wav"
+Read from file... 'sfname$'
+writeInfoLine:sfname$
+name$=selected$("Sound")
+if eT=0
+	eT=Get finishing time
+endif
+
+if rTn>0
+	if efname$=""
+		efname$=sfname$-".wav"+".png"
+	endif
+	To TextGrid... PY
+	select Sound 'name$'
+	To Pitch... 0.01 'f0Min' 'f0Max'
+	select Sound 'name$'
+	To Spectrogram... 0.005 'freBMax' 0.002 20 Gaussian
+	Erase all
+
+	#画波形图
+	Black
+	Viewport... 0 3 0 2.2
+	select Sound 'name$'
+	wavMin=Get minimum... 0 0 None
+	wavMin='wavMin:3'
+	wavMax=Get maximum... 0 0 None
+	wavMax='wavMax:3'
+	Draw... 'sT' 'eT' 0 0 no curve
+	Draw inner box
+	Select outer viewport: 0.5, 2.5, 0.3, 1.9	
+	Save as 600-dpi PNG file: "'efname$'"
+#Copy to clipboard
+endif
+plus Spectrogram 'name$'
+Remove

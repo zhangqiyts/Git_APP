@@ -1,0 +1,41 @@
+Text reading preferences: "UTF-8"
+Text writing preferences: "UTF-8"
+
+form Get_dirPath_from
+	sentence dirPath
+endform
+
+#dirPath$="/home/APP/PitchReplace/L2F_1_an1/result/"
+Create Strings as file list... list 'dirPath$'/*.wav
+fileNum= Get number of strings
+for ifile to fileNum
+select Strings list
+fileName$ = Get string... ifile
+newFileName$ = fileName$
+Read from file... 'dirPath$'/'fileName$'
+newdirPath$ = dirPath$
+while index(newdirPath$, ":")> 0
+a = index(newdirPath$, ":") - 1
+lb$ = left$(newdirPath$, a)
+b = length(newdirPath$) - a -1
+rb$ = right$(newdirPath$, b)
+newdirPath$ = lb$ + "_"+ rb$
+endwhile
+
+while index(newdirPath$, "\")> 0
+a = index(newdirPath$, "\") - 1
+lb$ = left$(newdirPath$, a)
+b = length(newdirPath$) - a -1
+rb$ = right$(newdirPath$, b)
+newdirPath$ = lb$ + "_"+ rb$
+endwhile
+
+newFileName$ = newFileName$ - ".wav"
+To Pitch... 0.01 50 500
+Down to PitchTier
+Write to text file... 'dirPath$'/'newFileName$'.PitchTier
+
+endfor
+select Strings list
+Remove
+

@@ -1,0 +1,857 @@
+a 	[a]	a
+ai 	[ai]	ai
+air 	[air]	ai R
+an 	[an]	an
+ang 	[ang]	ang
+angr 	[angr]	ang R
+anr 	[anr]	an R
+ao 	[ao]	ao
+aor 	[aor]	ao R
+ar 	[ar]	a R
+ba 	[ba]	b a
+bai 	[bai]	b ai
+bair 	[bair]	b ai R
+ban 	[ban]	b an
+bang 	[bang]	b ang
+bangr 	[bangr]	b ang R
+banr 	[banr]	b an R
+bao 	[bao]	b ao
+baor 	[baor]	b ao R
+bar 	[bar]	b a R
+bei 	[bei]	b ei
+beir 	[beir]	b ei R
+ben 	[ben]	b en
+beng 	[beng]	b eng
+bengr 	[bengr]	b eng R
+benr 	[benr]	b en R
+bi 	[bi]	b i
+bian 	[bian]	b ian
+bianr 	[bianr]	b ian R
+biao 	[biao]	b iao
+biaor 	[biaor]	b iao R
+bie 	[bie]	b ie
+bier 	[bier]	b ie R
+bin 	[bin]	b in
+bing 	[bing]	b ing
+bingr 	[bingr]	b ing R
+binr 	[binr]	b in R
+bir 	[bir]	b i R
+bo 	[bo]	b o
+bor 	[bor]	b o R
+bu 	[bu]	b u
+buo 	[buo]	b u o
+bur 	[bur]	b u R
+ca 	[ca]	c a
+cai 	[cai]	c ai
+cair 	[cair]	c ai R
+can 	[can]	c an
+cang 	[cang]	c ang
+cangr 	[cangr]	c ang R
+canr 	[canr]	c an R
+cao 	[cao]	c ao
+caor 	[caor]	c ao R
+car 	[car]	c a R
+ce 	[ce]	c e
+cei 	[cei]	c ei
+cen 	[cen]	c en
+ceng 	[ceng]	c eng
+cengr 	[cengr]	c eng R
+cenr 	[cenr]	c en R
+cer 	[cer]	c e R
+cha 	[cha]	ch a
+chai 	[chai]	ch ai
+chair 	[chair]	ch ai R
+chan 	[chan]	ch an
+chang 	[chang]	ch ang
+changr 	[changr]	ch ang R
+chanr 	[chanr]	ch an R
+chao 	[chao]	ch ao
+chaor 	[chaor]	ch ao R
+char 	[char]	ch a R
+che 	[che]	ch e
+chen 	[chen]	ch en
+cheng 	[cheng]	ch eng
+chengr 	[chengr]	ch eng R
+chenr 	[chenr]	ch en R
+cher 	[cher]	ch e R
+chi 	[chi]	ch iii
+chir 	[chir]	ch iii R
+chong 	[chong]	ch ong
+chongr 	[chongr]	ch ong R
+chou 	[chou]	ch ou
+chour 	[chour]	ch ou R
+chu 	[chu]	ch u
+chua 	[chua]	ch u a
+chuai 	[chuai]	ch uai
+chuair 	[chuair]	ch uai R
+chuan 	[chuan]	ch uan
+chuang 	[chuang]	ch uang
+chuangr 	[chuangr]	ch uang R
+chuanr 	[chuanr]	ch uan R
+chui 	[chui]	ch ui
+chuir 	[chuir]	ch ui R
+chun 	[chun]	ch un
+chunr 	[chunr]	ch un R
+chuo 	[chuo]	ch uo
+chuor 	[chuor]	ch uo R
+chur 	[chur]	ch u R
+ci 	[ci]	c ii
+cir 	[cir]	c ii R
+cong 	[cong]	c ong
+congr 	[congr]	c ong R
+cou 	[cou]	c ou
+cour 	[cour]	c ou R
+cu 	[cu]	c u
+cuan 	[cuan]	c uan
+cuanr 	[cuanr]	c uan R
+cui 	[cui]	c ui
+cuir 	[cuir]	c ui R
+cun 	[cun]	c un
+cunr 	[cunr]	c un R
+cuo 	[cuo]	c uo
+cuor 	[cuor]	c uo R
+cur 	[cur]	c u R
+da 	[da]	d a
+dai 	[dai]	d ai
+dair 	[dair]	d ai R
+dan 	[dan]	d an
+dang 	[dang]	d ang
+dangr 	[dangr]	d ang R
+danr 	[danr]	d an R
+dao 	[dao]	d ao
+daor 	[daor]	d ao R
+dar 	[dar]	d a R
+de 	[de]	d e
+dei 	[dei]	d ei
+deir 	[deir]	d ei R
+den 	[den]	d en
+deng 	[deng]	d eng
+dengr 	[dengr]	d eng R
+denr 	[denr]	d en R
+der 	[der]	d e R
+di 	[di]	d i
+dia 	[dia]	d ia
+dian 	[dian]	d ian
+dianr 	[dianr]	d ian R
+diao 	[diao]	d iao
+diaor 	[diaor]	d iao R
+diar 	[diar]	d ia R
+die 	[die]	d ie
+dier 	[dier]	d ie R
+ding 	[ding]	d ing
+dingr 	[dingr]	d ing R
+dir 	[dir]	d i R
+diu 	[diu]	d iu
+diur 	[diur]	d iu R
+dong 	[dong]	d ong
+dongr 	[dongr]	d ong R
+dou 	[dou]	d ou
+dour 	[dour]	d ou R
+du 	[du]	d u
+duan 	[duan]	d uan
+duanr 	[duanr]	d uan R
+duen 	[duen]	d u en
+dui 	[dui]	d ui
+duir 	[duir]	d ui R
+dun 	[dun]	d un
+dunr 	[dunr]	d un R
+duo 	[duo]	d uo
+duor 	[duor]	d uo R
+dur 	[dur]	d u R
+e 	[e]	e
+ei 	[ei]	ei
+eir 	[eir]	ei R
+en 	[en]	en
+eng 	[eng]	eng
+engr 	[engr]	eng R
+enr 	[enr]	en R
+er 	[er]	e R
+fa 	[fa]	f a
+fan 	[fan]	f an
+fang 	[fang]	f ang
+fangr 	[fangr]	f ang R
+fanr 	[fanr]	f an R
+far 	[far]	f a R
+fei 	[fei]	f ei
+feir 	[feir]	f ei R
+fen 	[fen]	f en
+feng 	[feng]	f eng
+fengr 	[fengr]	f eng R
+fenr 	[fenr]	f en R
+fo 	[fo]	f o
+for 	[for]	f o R
+fou 	[fou]	f ou
+four 	[four]	f ou R
+fu 	[fu]	f u
+fur 	[fur]	f u R
+ga 	[ga]	g a
+gai 	[gai]	g ai
+gair 	[gair]	g ai R
+gan 	[gan]	g an
+gang 	[gang]	g ang
+gangr 	[gangr]	g ang R
+ganr 	[ganr]	g an R
+gao 	[gao]	g ao
+gaor 	[gaor]	g ao R
+gar 	[gar]	g a R
+ge 	[ge]	g e
+gei 	[gei]	g ei
+geir 	[geir]	g ei R
+gen 	[gen]	g en
+geng 	[geng]	g eng
+gengr 	[gengr]	g eng R
+genr 	[genr]	g en R
+ger 	[ger]	g e R
+gong 	[gong]	g ong
+gongr 	[gongr]	g ong R
+gou 	[gou]	g ou
+gour 	[gour]	g ou R
+gu 	[gu]	g u
+gua 	[gua]	g ua
+guai 	[guai]	g uai
+guair 	[guair]	g uai R
+guan 	[guan]	g uan
+guang 	[guang]	g uang
+guangr 	[guangr]	g uang R
+guanr 	[guanr]	g uan R
+guar 	[guar]	g ua R
+gui 	[gui]	g ui
+guir 	[guir]	g ui R
+gun 	[gun]	g un
+gunr 	[gunr]	g un R
+guo 	[guo]	g uo
+guor 	[guor]	g uo R
+gur 	[gur]	g u R
+ha 	[ha]	h a
+hai 	[hai]	h ai
+hair 	[hair]	h ai R
+han 	[han]	h an
+hang 	[hang]	h ang
+hangr 	[hangr]	h ang R
+hanr 	[hanr]	h an R
+hao 	[hao]	h ao
+haor 	[haor]	h ao R
+har 	[har]	h a R
+he 	[he]	h e
+hei 	[hei]	h ei
+heir 	[heir]	h ei R
+hen 	[hen]	h en
+heng 	[heng]	h eng
+hengr 	[hengr]	h eng R
+henr 	[henr]	h en R
+her 	[her]	h e R
+hng 	[hng]	eng
+hngr 	[hngr]	eng R
+hong 	[hong]	h ong
+hongr 	[hongr]	h ong R
+hou 	[hou]	h ou
+hour 	[hour]	h ou R
+hu 	[hu]	h u
+hua 	[hua]	h ua
+huai 	[huai]	h uai
+huair 	[huair]	h uai R
+huan 	[huan]	h uan
+huang 	[huang]	h uang
+huangr 	[huangr]	h uang R
+huanr 	[huanr]	h uan R
+huar 	[huar]	h ua R
+huei 	[huei]	h u ei
+hui 	[hui]	h ui
+huir 	[huir]	h ui R
+hun 	[hun]	h un
+hunr 	[hunr]	h un R
+huo 	[huo]	h uo
+huor 	[huor]	h uo R
+hur 	[hur]	h u R
+i 	[i]	i
+ir 	[ir]	i R
+iu 	[iu]	iu
+iur 	[iur]	iu R
+ji 	[ji]	j i
+jia 	[jia]	j ia
+jian 	[jian]	j ian
+jiang 	[jiang]	j iang
+jiangr 	[jiangr]	j iang R
+jianr 	[jianr]	j ian R
+jiao 	[jiao]	j iao
+jiaor 	[jiaor]	j iao R
+jiar 	[jiar]	j ia R
+jie 	[jie]	j ie
+jier 	[jier]	j ie R
+jin 	[jin]	j in
+jing 	[jing]	j ing
+jingr 	[jingr]	j ing R
+jinr 	[jinr]	j in R
+jiong 	[jiong]	j iong
+jiongr 	[jiongr]	j iong R
+jir 	[jir]	j i R
+jiu 	[jiu]	j iu
+jiur 	[jiur]	j iu R
+ju 	[ju]	j v
+juan 	[juan]	j van
+juanr 	[juanr]	j van R
+jue 	[jue]	j ve
+juer 	[juer]	j ve R
+jun 	[jun]	j vn
+junr 	[junr]	j vn R
+jur 	[jur]	j v R
+jve 	[jve]	j ve
+ka 	[ka]	k a
+kai 	[kai]	k ai
+kair 	[kair]	k ai R
+kan 	[kan]	k an
+kang 	[kang]	k ang
+kangr 	[kangr]	k ang R
+kanr 	[kanr]	k an R
+kao 	[kao]	k ao
+kaor 	[kaor]	k ao R
+kar 	[kar]	k a R
+ke 	[ke]	k e
+kei 	[kei]	k ei
+keir 	[keir]	k ei R
+ken 	[ken]	k en
+keng 	[keng]	k eng
+kengr 	[kengr]	k eng R
+kenr 	[kenr]	k en R
+ker 	[ker]	k e R
+kiu 	[kiu]	k iu
+kiur 	[kiur]	k iu R
+kong 	[kong]	k ong
+kongr 	[kongr]	k ong R
+kou 	[kou]	k ou
+kour 	[kour]	k ou R
+ku 	[ku]	k u
+kua 	[kua]	k ua
+kuai 	[kuai]	k uai
+kuair 	[kuair]	k uai R
+kuan 	[kuan]	k uan
+kuang 	[kuang]	k uang
+kuangr 	[kuangr]	k uang R
+kuanr 	[kuanr]	k uan R
+kuar 	[kuar]	k ua R
+kui 	[kui]	k ui
+kuir 	[kuir]	k ui R
+kun 	[kun]	k un
+kunr 	[kunr]	k un R
+kuo 	[kuo]	k uo
+kuor 	[kuor]	k uo R
+kur 	[kur]	k u R
+la 	[la]	l a
+lai 	[lai]	l ai
+lair 	[lair]	l ai R
+lan 	[lan]	l an
+lang 	[lang]	l ang
+langr 	[langr]	l ang R
+lanr 	[lanr]	l an R
+lao 	[lao]	l ao
+laor 	[laor]	l ao R
+lar 	[lar]	l a R
+le 	[le]	l e
+lei 	[lei]	l ei
+leir 	[leir]	l ei R
+leng 	[leng]	l eng
+lengr 	[lengr]	l eng R
+ler 	[ler]	l e R
+li 	[li]	l i
+lia 	[lia]	l ia
+lian 	[lian]	l ian
+liang 	[liang]	l iang
+liangr 	[liangr]	l iang R
+lianr 	[lianr]	l ian R
+liao 	[liao]	l iao
+liaor 	[liaor]	l iao R
+liar 	[liar]	l ia R
+lie 	[lie]	l ie
+lien 	[lien]	l i en
+lieng 	[lieng]	l i eng
+lier 	[lier]	l ie R
+lin 	[lin]	l in
+ling 	[ling]	l ing
+lingr 	[lingr]	l ing R
+linr 	[linr]	l in R
+liou 	[liou]	l i ou
+lir 	[lir]	l i R
+liu 	[liu]	l iu
+liur 	[liur]	l iu R
+lo 	[lo]	l o
+long 	[long]	l ong
+longr 	[longr]	l ong R
+lor 	[lor]	l o R
+lou 	[lou]	l ou
+lour 	[lour]	l ou R
+lu 	[lu]	l u
+luan 	[luan]	l uan
+luanr 	[luanr]	l uan R
+lue 	[lue]	l ve
+luer 	[luer]	l ve R
+lun 	[lun]	l un
+lunr 	[lunr]	l un R
+luo 	[luo]	l uo
+luor 	[luor]	l uo R
+lur 	[lur]	l u R
+lv 	[lv]	l v
+lve 	[lve]	l ve
+lver 	[lver]	l ve R
+lvr 	[lvr]	l v R
+ma 	[ma]	m a
+mai 	[mai]	m ai
+mair 	[mair]	m ai R
+man 	[man]	m an
+mang 	[mang]	m ang
+mangr 	[mangr]	m ang R
+manr 	[manr]	m an R
+mao 	[mao]	m ao
+maor 	[maor]	m ao R
+mar 	[mar]	m a R
+me 	[me]	m e
+mei 	[mei]	m ei
+meir 	[meir]	m ei R
+men 	[men]	m en
+meng 	[meng]	m eng
+mengr 	[mengr]	m eng R
+menr 	[menr]	m en R
+mer 	[mer]	m e R
+mi 	[mi]	m i
+mian 	[mian]	m ian
+mianr 	[mianr]	m ian R
+miao 	[miao]	m iao
+miaor 	[miaor]	m iao R
+mie 	[mie]	m ie
+mier 	[mier]	m ie R
+min 	[min]	m in
+ming 	[ming]	m ing
+mingr 	[mingr]	m ing R
+minr 	[minr]	m in R
+mir 	[mir]	m i R
+miu 	[miu]	m iu
+miur 	[miur]	m iu R
+mo 	[mo]	m o
+mor 	[mor]	m o R
+mou 	[mou]	m ou
+mour 	[mour]	m ou R
+mu 	[mu]	m u
+mur 	[mur]	m u R
+na 	[na]	n a
+nai 	[nai]	n ai
+nair 	[nair]	n ai R
+nan 	[nan]	n an
+nang 	[nang]	n ang
+nangr 	[nangr]	n ang R
+nanr 	[nanr]	n an R
+nao 	[nao]	n ao
+naor 	[naor]	n ao R
+nar 	[nar]	n a R
+ne 	[ne]	n e
+nei 	[nei]	n ei
+neir 	[neir]	n ei R
+nen 	[nen]	n en
+neng 	[neng]	n eng
+nengr 	[nengr]	n eng R
+nenr 	[nenr]	n en R
+ner 	[ner]	n e R
+ng 	[ng]	eng
+ngr 	[ngr]	eng R
+ni 	[ni]	n i
+nian 	[nian]	n ian
+niang 	[niang]	n iang
+niangr 	[niangr]	n iang R
+nianr 	[nianr]	n ian R
+niao 	[niao]	n iao
+niaor 	[niaor]	n iao R
+nie 	[nie]	n ie
+nier 	[nier]	n ie R
+nin 	[nin]	n in
+ning 	[ning]	n ing
+ningr 	[ningr]	n ing R
+ninr 	[ninr]	n in R
+nir 	[nir]	n i R
+niu 	[niu]	n iu
+niur 	[niur]	n iu R
+nong 	[nong]	n ong
+nongr 	[nongr]	n ong R
+nou 	[nou]	n ou
+nour 	[nour]	n ou R
+nu 	[nu]	n u
+nuan 	[nuan]	n uan
+nuanr 	[nuanr]	n uan R
+nue 	[nue]	n ve
+nuer 	[nuer]	n ve R
+nun 	[nun]	n un
+nuo 	[nuo]	n uo
+nuor 	[nuor]	n uo R
+nur 	[nur]	n u R
+nv 	[nv]	n v
+nve 	[nve]	n ve
+nver 	[nver]	n ve R
+nvr 	[nvr]	n v R
+o 	[o]	o
+or 	[or]	o R
+ou 	[ou]	ou
+our 	[our]	ou R
+pa 	[pa]	p a
+pai 	[pai]	p ai
+pair 	[pair]	p ai R
+pan 	[pan]	p an
+pang 	[pang]	p ang
+pangr 	[pangr]	p ang R
+panr 	[panr]	p an R
+pao 	[pao]	p ao
+paor 	[paor]	p ao R
+par 	[par]	p a R
+pei 	[pei]	p ei
+peir 	[peir]	p ei R
+pen 	[pen]	p en
+peng 	[peng]	p eng
+pengr 	[pengr]	p eng R
+penr 	[penr]	p en R
+pi 	[pi]	p i
+pian 	[pian]	p ian
+pianr 	[pianr]	p ian R
+piao 	[piao]	p iao
+piaor 	[piaor]	p iao R
+pie 	[pie]	p ie
+pier 	[pier]	p ie R
+pin 	[pin]	p in
+ping 	[ping]	p ing
+pingr 	[pingr]	p ing R
+pinr 	[pinr]	p in R
+pir 	[pir]	p i R
+po 	[po]	p o
+por 	[por]	p o R
+pou 	[pou]	p ou
+pour 	[pour]	p ou R
+pu 	[pu]	p u
+puo 	[puo]	p u o
+pur 	[pur]	p u R
+qi 	[qi]	q i
+qia 	[qia]	q ia
+qian 	[qian]	q ian
+qiang 	[qiang]	q iang
+qiangr 	[qiangr]	q iang R
+qianr 	[qianr]	q ian R
+qiao 	[qiao]	q iao
+qiaor 	[qiaor]	q iao R
+qiar 	[qiar]	q ia R
+qie 	[qie]	q ie
+qieng 	[qieng]	q i eng
+qier 	[qier]	q ie R
+qin 	[qin]	q in
+qing 	[qing]	q ing
+qingr 	[qingr]	q ing R
+qinr 	[qinr]	q in R
+qiong 	[qiong]	q iong
+qiongr 	[qiongr]	q iong R
+qir 	[qir]	q i R
+qiu 	[qiu]	q iu
+qiur 	[qiur]	q iu R
+qu 	[qu]	q v
+quan 	[quan]	q van
+quanr 	[quanr]	q van R
+que 	[que]	q ve
+quer 	[quer]	q ve R
+qun 	[qun]	q vn
+qunr 	[qunr]	q vn R
+qur 	[qur]	q v R
+ran 	[ran]	r an
+rang 	[rang]	r ang
+rangr 	[rangr]	r ang R
+ranr 	[ranr]	r an R
+rao 	[rao]	r ao
+raor 	[raor]	r ao R
+re 	[re]	r e
+ren 	[ren]	r en
+reng 	[reng]	r eng
+rengr 	[rengr]	r eng R
+renr 	[renr]	r en R
+rer 	[rer]	r e R
+ri 	[ri]	r iii
+rir 	[rir]	r iii R
+rong 	[rong]	r ong
+rongr 	[rongr]	r ong R
+rou 	[rou]	r ou
+rour 	[rour]	r ou R
+ru 	[ru]	r u
+rua 	[rua]	r ua
+ruan 	[ruan]	r uan
+ruanr 	[ruanr]	r uan R
+ruar 	[ruar]	r ua R
+rui 	[rui]	r ui
+ruir 	[ruir]	r ui R
+run 	[run]	r un
+runr 	[runr]	r un R
+ruo 	[ruo]	r uo
+ruor 	[ruor]	r uo R
+rur 	[rur]	r u R
+sa 	[sa]	s a
+sai 	[sai]	s ai
+sair 	[sair]	s ai R
+san 	[san]	s an
+sang 	[sang]	s ang
+sangr 	[sangr]	s ang R
+sanr 	[sanr]	s an R
+sao 	[sao]	s ao
+saor 	[saor]	s ao R
+sar 	[sar]	s a R
+se 	[se]	s e
+sei 	[sei]	s ei
+seir 	[seir]	s ei R
+sen 	[sen]	s en
+seng 	[seng]	s eng
+sengr 	[sengr]	s eng R
+senr 	[senr]	s en R
+ser 	[ser]	s e R
+sha 	[sha]	sh a
+shai 	[shai]	sh ai
+shair 	[shair]	sh ai R
+shan 	[shan]	sh an
+shang 	[shang]	sh ang
+shangr 	[shangr]	sh ang R
+shanr 	[shanr]	sh an R
+shao 	[shao]	sh ao
+shaor 	[shaor]	sh ao R
+shar 	[shar]	sh a R
+she 	[she]	sh e
+shei 	[shei]	sh ei
+sheir 	[sheir]	sh ei R
+shen 	[shen]	sh en
+sheng 	[sheng]	sh eng
+shengr 	[shengr]	sh eng R
+shenr 	[shenr]	sh en R
+sher 	[sher]	sh e R
+shi 	[shi]	sh iii
+shir 	[shir]	sh iii R
+shou 	[shou]	sh ou
+shour 	[shour]	sh ou R
+shu 	[shu]	sh u
+shua 	[shua]	sh ua
+shuai 	[shuai]	sh uai
+shuair 	[shuair]	sh uai R
+shuan 	[shuan]	sh uan
+shuang 	[shuang]	sh uang
+shuangr 	[shuangr]	sh uang R
+shuanr 	[shuanr]	sh uan R
+shuar 	[shuar]	sh ua R
+shui 	[shui]	sh ui
+shuir 	[shuir]	sh ui R
+shun 	[shun]	sh un
+shunr 	[shunr]	sh un R
+shuo 	[shuo]	sh uo
+shuor 	[shuor]	sh uo R
+shur 	[shur]	sh u R
+si 	[si]	s ii
+sil 	[sil]	sil
+sp		[sp]	sp
+silr 	[silr]	 R
+sir 	[sir]	s ii R
+song 	[song]	s ong
+songr 	[songr]	s ong R
+sou 	[sou]	s ou
+sour 	[sour]	s ou R
+su 	[su]	s u
+suan 	[suan]	s uan
+suanr 	[suanr]	s uan R
+sui 	[sui]	s ui
+suir 	[suir]	s ui R
+sun 	[sun]	s un
+sunr 	[sunr]	s un R
+suo 	[suo]	s uo
+suor 	[suor]	s uo R
+sur 	[sur]	s u R
+ta 	[ta]	t a
+tai 	[tai]	t ai
+tair 	[tair]	t ai R
+tan 	[tan]	t an
+tang 	[tang]	t ang
+tangr 	[tangr]	t ang R
+tanr 	[tanr]	t an R
+tao 	[tao]	t ao
+taor 	[taor]	t ao R
+tar 	[tar]	t a R
+te 	[te]	t e
+tei 	[tei]	t ei
+teir 	[teir]	t ei R
+teng 	[teng]	t eng
+tengr 	[tengr]	t eng R
+ter 	[ter]	t e R
+ti 	[ti]	t i
+tian 	[tian]	t ian
+tianr 	[tianr]	t ian R
+tiao 	[tiao]	t iao
+tiaor 	[tiaor]	t iao R
+tie 	[tie]	t ie
+tier 	[tier]	t ie R
+ting 	[ting]	t ing
+tingr 	[tingr]	t ing R
+tir 	[tir]	t i R
+tong 	[tong]	t ong
+tongr 	[tongr]	t ong R
+tou 	[tou]	t ou
+tour 	[tour]	t ou R
+tu 	[tu]	t u
+tuan 	[tuan]	t uan
+tuanr 	[tuanr]	t uan R
+tui 	[tui]	t ui
+tuir 	[tuir]	t ui R
+tun 	[tun]	t un
+tunr 	[tunr]	t un R
+tuo 	[tuo]	t uo
+tuor 	[tuor]	t uo R
+tur 	[tur]	t u R
+weng 	[weng]	ong
+wengr 	[wengr]	ong R
+wa 	[wa]	ua
+wai 	[wai]	uai
+wair 	[wair]	uai R
+wan 	[wan]	uan
+wang 	[wang]	uang
+wangr 	[wangr]	uang R
+wanr 	[wanr]	uan R
+war 	[war]	ua R
+wei  	[wei]	ui
+weir 	[weir]	ui R
+wen 	    [wen]	un
+weng 	[weng]	ong
+wengr 	[wengr]	ong R
+wenr 	[wenr]	un R
+wo 	    [wo]	uo
+wor 	[wor]	uo R
+wu 	    [wu]	u
+wur 	[wur]	u R
+xi 	[xi]	x i
+xia 	[xia]	x ia
+xian 	[xian]	x ian
+xiang 	[xiang]	x iang
+xiangr 	[xiangr]	x iang R
+xianr 	[xianr]	x ian R
+xiao 	[xiao]	x iao
+xiaor 	[xiaor]	x iao R
+xiar 	[xiar]	x ia R
+xie 	[xie]	x ie
+xier 	[xier]	x ie R
+xin 	[xin]	x in
+xing 	[xing]	x ing
+xingr 	[xingr]	x ing R
+xinr 	[xinr]	x in R
+xiong 	[xiong]	x iong
+xiongr 	[xiongr]	x iong R
+xiou 	[xiou]	x i ou
+xir 	[xir]	x i R
+xiu 	[xiu]	x iu
+xiur 	[xiur]	x iu R
+xu 	[xu]	x v
+xuan 	[xuan]	x van
+xuanr 	[xuanr]	x van R
+xue 	[xue]	x ve
+xuer 	[xuer]	x ve R
+xun 	[xun]	x vn
+xunr 	[xunr]	x vn R
+xur 	[xur]	x v R
+xv 	[xv]	x v
+ya 	[ya]	ia
+yan 	[yan]	ian
+yang 	[yang]	iang
+yangr 	[yangr]	iang R
+yanr 	[yanr]	ian R
+yao 	[yao]	iao
+yaor 	[yaor]	iao R
+yar 	[yar]	ia R
+ye 	[ye]	ie
+yen 	[yen]	en
+yer 	[yer]	ie R
+yi 	[yi]	i
+yin 	[yin]	in
+ying 	[ying]	ing
+yingr 	[yingr]	ing R
+yinr 	[yinr]	in R
+yir 	[yir]	i R
+yo 	[yo]	iao
+yong 	[yong]	iong
+yongr 	[yongr]	iong R
+yor 	[yor]	iao R
+you 	[you]	iu
+your 	[your]	iu R
+yu 	[yu]	v
+yuan 	[yuan]	van
+yuanr 	[yuanr]	van R
+yue 	[yue]	ve
+yuer 	[yuer]	ve R
+yun 	[yun]	vn
+yunr 	[yunr]	vn R
+yur 	[yur]	v R
+yu 	[yv]	v
+yun 	[yvn]	vn
+yur 	[yvr]	v R
+za 	[za]	z a
+zai 	[zai]	z ai
+zair 	[zair]	z ai R
+zan 	[zan]	z an
+zang 	[zang]	z ang
+zangr 	[zangr]	z ang R
+zanr 	[zanr]	z an R
+zao 	[zao]	z ao
+zaor 	[zaor]	z ao R
+zar 	[zar]	z a R
+ze 	[ze]	z e
+zei 	[zei]	z ei
+zeir 	[zeir]	z ei R
+zen 	[zen]	z en
+zeng 	[zeng]	z eng
+zengr 	[zengr]	z eng R
+zenr 	[zenr]	z en R
+zer 	[zer]	z e R
+zha 	[zha]	zh a
+zhai 	[zhai]	zh ai
+zhair 	[zhair]	zh ai R
+zhan 	[zhan]	zh an
+zhang 	[zhang]	zh ang
+zhangr 	[zhangr]	zh ang R
+zhanr 	[zhanr]	zh an R
+zhao 	[zhao]	zh ao
+zhaor 	[zhaor]	zh ao R
+zhar 	[zhar]	zh a R
+zhe 	[zhe]	zh e
+zhei 	[zhei]	zh ei
+zheir 	[zheir]	zh ei R
+zhen 	[zhen]	zh en
+zheng 	[zheng]	zh eng
+zhengr 	[zhengr]	zh eng R
+zhenr 	[zhenr]	zh en R
+zher 	[zher]	zh e R
+zhi 	[zhi]	zh iii
+zhir 	[zhir]	zh iii R
+zhong 	[zhong]	zh ong
+zhongr 	[zhongr]	zh ong R
+zhou 	[zhou]	zh ou
+zhour 	[zhour]	zh ou R
+zhu 	[zhu]	zh u
+zhua 	[zhua]	zh ua
+zhuai 	[zhuai]	zh uai
+zhuair 	[zhuair]	zh uai R
+zhuan 	[zhuan]	zh uan
+zhuang 	[zhuang]	zh uang
+zhuangr 	[zhuangr]	zh uang R
+zhuanr 	[zhuanr]	zh uan R
+zhuar 	[zhuar]	zh ua R
+zhui 	[zhui]	zh ui
+zhuir 	[zhuir]	zh ui R
+zhun 	[zhun]	zh un
+zhunr 	[zhunr]	zh un R
+zhuo 	[zhuo]	zh uo
+zhuor 	[zhuor]	zh uo R
+zhur 	[zhur]	zh u R
+zi 	[zi]	z ii
+zir 	[zir]	z ii R
+zong 	[zong]	z ong
+zongr 	[zongr]	z ong R
+zou 	[zou]	z ou
+zour 	[zour]	z ou R
+zu 	[zu]	z u
+zuan 	[zuan]	z uan
+zuanr 	[zuanr]	z uan R
+zui 	[zui]	z ui
+zuir 	[zuir]	z ui R
+zun 	[zun]	z un
+zunr 	[zunr]	z un R
+zuo 	[zuo]	z uo
+zuor 	[zuor]	z uo R
+zur 	[zur]	z u R

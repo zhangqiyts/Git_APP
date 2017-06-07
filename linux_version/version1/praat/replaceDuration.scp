@@ -1,0 +1,94 @@
+#sentence time_point 0,0,0.273,0.274,0.54,0.541,0.84
+#sentence ratio 0,1,1,2,2,1,1
+
+
+indir$ = "D:\errornewwav\F5\"
+wav_directory$="D:\errorwav\F5\"
+Create Strings as file list... list1 'wav_directory$'\*.wav
+fileNum_wav = Get number of strings
+
+time_directory$="D:\errortime\F5\"
+Create Strings as file list... list2 'time_directory$'\*.txt
+fileNum_time = Get number of strings
+
+ratio_directory$="D:\errorratio\F5\"
+Create Strings as file list... list3 'ratio_directory$'\*.txt
+fileNum_ratio = Get number of strings
+
+echo fileNum_wav = 'fileNum_wav' fileNum_time = 'fileNum_time' fileNum_ratio = 'fileNum_ratio'
+if (fileNum_wav != fileNum_time || fileNum_time != fileNum_ratio || fileNum_wav != fileNum_ratio)
+	exit Exactly each Sound must associate with its TextGrid object.
+endif 
+
+
+for current_file from 1 to fileNum_time
+	select Strings list2
+	filename_time$ = Get string... current_file
+	time_point$ = readFile$ ("'time_directory$'\'filename_time$'")
+	
+	time_point$ = time_point$ + ","
+	t = 0
+	while time_point$!=""
+		cpos=index(time_point$,",")
+		ltxt$=left$(time_point$,cpos-1)
+		time_point$=right$(time_point$,length(time_point$)-cpos)
+		if ltxt$!=""
+			v=extractNumber(ltxt$,"")
+			time_point't'=v	
+			t=t+1
+		endif
+	endwhile
+	
+	wordcount = t - 1
+	#printline 'wordcount'...
+	filename_ratio$ = filename_time$
+	ratio$ = readFile$ ("'ratio_directory$'\'filename_ratio$'")
+	#printline 'ratio$'...
+	ratio$ = ratio$ + ","
+	r = 0
+	while ratio$!=""
+		cpos=index(ratio$,",")
+		ltxt$=left$(ratio$,cpos-1)
+		ratio$=right$(ratio$,length(ratio$)-cpos)
+		if ltxt$!=""
+			v=extractNumber(ltxt$,"")
+			ratio'r'=v
+			r=r+1
+		endif
+	endwhile
+	
+	filename$ = filename_time$ - ".txt"
+	filename_wav$ = filename$ + ".wav"
+	Read from file... 'wav_directory$'\'filename_wav$'
+	Rename: "modify"
+
+	soundname$ = filename$ + ".wav"
+	
+	To Manipulation: 0.01, 75, 600
+	Extract duration tier
+
+	for i from 1 to wordcount
+		time_start = time_point'i'
+		ratio = ratio'i'
+		printline 'time_start'
+		Add point: 'time_start', 'ratio'
+	endfor
+		
+	selectObject: "Manipulation modify"
+	plusObject: "DurationTier modify"
+	Replace duration tier
+	selectObject: "Manipulation modify"
+	Get resynthesis (overlap-add)
+	Write to WAV file... 'indir$''soundname$'
+endfor
+select all
+Remove
+
+
+
+
+
+
+
+
+
