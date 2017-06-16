@@ -52,21 +52,21 @@ $file_Chinese_dir = $path."/".$Chinese_ID."/".$Chinese_FileName;
 opendir(Dir, $file_Chinese_dir) || die;
 @Chinese_file = readdir(Dir);
 for($i = 2; $i < @Chinese_file; $i++){
-	if($Chinese_file[$i] =~ /(.+)\_TimeF0$/){
-		open(Chinese_TimeF0, "$file_Chinese_dir/$Chinese_file[$i]")||die;
-		open(Chinese_Regression_TimeF0, ">$filedir_result/$Chinese_file[$i]");
-		while(<Chinese_TimeF0>){
-			chomp;
-			@chinese_timef0 = split(/\s+/,$_);
-			if($chinese_timef0[1] ne "***"){
-				$Chinese_Regression_F0 = sprintf("%.3f", $chinese_timef0[1]);
-			}else{
-				$Chinese_Regression_F0 = "***";
-			}	
-			print Chinese_Regression_TimeF0 "$chinese_timef0[0] $Chinese_Regression_F0\n";		
-		}
-		close(Chinese_Regression_TimeF0);
-	}
+	# if($Chinese_file[$i] =~ /(.+)\_TimeF0$/){
+		# open(Chinese_TimeF0, "$file_Chinese_dir/$Chinese_file[$i]")||die;
+		# open(Chinese_Regression_TimeF0, ">$filedir_result/$Chinese_file[$i]");
+		# while(<Chinese_TimeF0>){
+			# chomp;
+			# @chinese_timef0 = split(/\s+/,$_);
+			# if($chinese_timef0[1] ne "***"){
+				# $Chinese_Regression_F0 = sprintf("%.3f", $chinese_timef0[1]);
+			# }else{
+				# $Chinese_Regression_F0 = "***";
+			# }	
+			# print Chinese_Regression_TimeF0 "$chinese_timef0[0] $Chinese_Regression_F0\n";		
+		# }
+		# close(Chinese_Regression_TimeF0);
+	# }
 	if($Chinese_file[$i] =~ /(.+)\_FiveDegree$/){
 		system("cp $file_Chinese_dir/$Chinese_file[$i]  $filedir_result/$Chinese_file[$i]");
 	}
@@ -96,13 +96,12 @@ for($i = 2; $i < @file_data; $i++) {
 		$L2_Regression_Time = $1."_regression_time";
 		open(L2_Regression_Time, ">$filedir_result/$L2_Regression_Time");
 		$new_wav_name = $L2_FileName;
-		$Final_DelOnsetCoda_TimeF0 = $L2_FileName."_TimeF0";
-		$Final_DelOnsetCoda_TimeF0Zscore = $L2_FileName."_TimeF0Zscore";
+		# $Final_DelOnsetCoda_TimeF0 = $L2_FileName."_TimeF0";
+		# $Final_DelOnsetCoda_TimeF0Zscore = $L2_FileName."_TimeF0Zscore";
 		$Final_DelOnsetCoda_FiveDegree = $L2_FileName."_FiveDegree";
-		open(Final_DelOnsetCoda_TimeF0, ">$file_data_dir/$Final_DelOnsetCoda_TimeF0");
-		open(Final_DelOnsetCoda_TimeF0Zscore, ">$file_data_dir/$Final_DelOnsetCoda_TimeF0Zscore");
-		open(L2_Regression_TimeF0, ">$filedir_result/$Final_DelOnsetCoda_TimeF0");
-		open(L2_Regression_FiveDegree, ">$filedir_result/$Final_DelOnsetCoda_FiveDegree");
+		# open(Final_DelOnsetCoda_TimeF0, ">$file_data_dir/$Final_DelOnsetCoda_TimeF0");
+		# open(Final_DelOnsetCoda_TimeF0Zscore, ">$file_data_dir/$Final_DelOnsetCoda_TimeF0Zscore");
+		# open(L2_Regression_TimeF0, ">$filedir_result/$Final_DelOnsetCoda_TimeF0");
 		open(L2_Regression_FiveDegree, ">$filedir_result/$Final_DelOnsetCoda_FiveDegree");
 		open(final_time, "$file_data_dir/$file_data[$i]")||die;
 		my $timeDeleteOnset;
@@ -258,27 +257,26 @@ for($i = 2; $i < @file_data; $i++) {
 				if($each_time >= $timeDeleteOnset && $each_time <= $timeDeleteCoda){
 					$each_F0 = sprintf("%.3f", $each_F0);
 					my $F0_Zscore = sprintf("%.3f",($each_F0-$mean)/$dev);
-					#my $L2_Regression_TimeF0 = sprintf("%.3f",$F0_Zscore*$mean_dev[1]+$mean_dev[0]);
 					my $L2_Regression_TimeF0 = $each_F0;
 					my $L2_Regression_FiveDegree = ($each_F0-$pitchrange_min)/($pitchrange_max-$pitchrange_min)*5;
-					print Final_DelOnsetCoda_TimeF0 "$each_time $each_F0\n"; 
-					print Final_DelOnsetCoda_TimeF0Zscore "$each_time $F0_Zscore\n";	
-					print L2_Regression_TimeF0 "$each_time $L2_Regression_TimeF0\n";
+					# print Final_DelOnsetCoda_TimeF0 "$each_time $each_F0\n"; 
+					# print Final_DelOnsetCoda_TimeF0Zscore "$each_time $F0_Zscore\n";	
+					# print L2_Regression_TimeF0 "$each_time $L2_Regression_TimeF0\n";
 					print L2_Regression_FiveDegree "$each_time $L2_Regression_FiveDegree\n";
 				}
 			}
 			close(time_F0);
-			print Final_DelOnsetCoda_TimeF0Zscore "*** ***\n";
-			print Final_DelOnsetCoda_TimeF0 "*** ***\n";
-			print L2_Regression_TimeF0 "*** ***\n";	
+			# print Final_DelOnsetCoda_TimeF0Zscore "*** ***\n";
+			# print Final_DelOnsetCoda_TimeF0 "*** ***\n";
+			# print L2_Regression_TimeF0 "*** ***\n";	
 			print L2_Regression_FiveDegree "*** ***\n";				
 			$row++;
 		}
 		close(final_time);
 		close(L2_Regression_Time);
-		close(Final_DelOnsetCoda_TimeF0Zscore);	
-		close(Final_DelOnsetCoda_TimeF0);	
-		close(L2_Regression_TimeF0);	
+		# close(Final_DelOnsetCoda_TimeF0Zscore);	
+		# close(Final_DelOnsetCoda_TimeF0);	
+		# close(L2_Regression_TimeF0);	
 		close(L2_Regression_FiveDegree);	
 	}
 }
